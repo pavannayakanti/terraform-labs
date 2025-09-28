@@ -1,2 +1,4 @@
-# sample main.tf file for lab
-resource "aws_instance" "example" {}
+resource "local_file" "games" {
+  file     = "/root/favorite-games"
+  content  = "FIFA 21"
+}
